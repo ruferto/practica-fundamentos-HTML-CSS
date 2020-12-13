@@ -166,3 +166,7 @@ block-size: fit-content;
     }
     
   }
+
+  .titulo-abajo{
+    width:var(--cartel-height);
+  }
