@@ -205,3 +205,19 @@ padding-top: 5px;
         filter: invert(1);
     }
   }
+
+  @media (prefers-reduced-motion) {
+    .ficha-peli:hover .cartel {
+      
+        transition: transform 0s ease-in-out;
+    }
+
+    .ficha-peli:hover .movie-text {
+      
+        transition: transform 0s ease-in-out;
+    }
+
+    .check-fav:checked ~ .starred{
+        animation-name: dissolve;
+    }
+  }
