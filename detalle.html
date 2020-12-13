@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/detalles.css">
+    <link rel="stylesheet" href="./css/parrilla.css">
+    <title>Detalle</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">NERDFLIX</div>
+  
+        <input type="checkbox" id="burger-checkbox" />
+        <label for="burger-checkbox" class="burger-label"></label>
+  
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="./index.html">Novedades</a></li>
+          <li class="navbar-item"><a href="./index.html">Películas</a></li>
+          <li class="navbar-item"><a href="./index.html">Series</a></li>
+          <li class="navbar-item"><a href="./index.html">Favoritos</a></li>
+          <li class="navbar-item"><a href="./login.html"><img src="./img/logout.png" height="22" /></a></li>
+          <li class="navbar-item item-busqueda">
+              <a><img class="lupa-icon" src="./img/search_icon.png" height="22">
+              <form class="busqueda"><input type="text" id="searchterm" name="searchterm" method="GET"></form></a>
+            </li>
+          
+        </ul>
+        
+    </nav>
+    <header><h1 class="titulo-header">NERDFLIX</h1></header>
+
+    <section>
+    <div class="wrapper">
+        <div class="contenedor-video">
+            <video class="reproductor" controls>
+                <source src="./media/rick-and-morty-intro.mp4">
+                Lo sentimos, tu navegador no tiene soporte para vídeo.
+            </video>
+        </div>
+
+        <div class="ficha-tecnica">
+            <strong>Título:</strong> Rick and Morty<br>
+                <strong>Año:</strong> 2013<br>
+                <strong>Director:</strong> Justin Roiland
+                Dan Harmon<br>
+                <strong>Actores:</strong> Justin Roiland
+                Chris Parnell<br>
+                <strong>Sinopsis:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, rem excepturi ad voluptate a itaque illo sed enim cum aliquam mollitia molestias officia necessitatibus quaerat harum. Animi doloremque vero tenetur.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero corrupti, numquam facere officiis perferendis reiciendis. Magni quidem temporibus, officiis iure neque debitis iste laboriosam qui? Eum, adipisci expedita. Doloribus, atque.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem numquam, dignissimos expedita animi itaque, necessitatibus nam dolores libero perspiciatis laboriosam debitis accusantium asperiores cupiditate praesentium. Nobis ex officia aspernatur rem.
+        </div>
+
+        <div class="counter">
+            <aside>
+            <div class="coming">COMING SOON...</div>
+            <div class="counter-numbers">12/06/2021<br><span>00:00</span></div>
+            <div class="counter-form-container">
+                <form class="counter-form" action="">
+                    <input class="counter-email" type="email" id="email" name="email" placeholder="Aquí tu email" required /><br>
+                    <input class="counter-mail-btn" type="submit" value="¡Avísame!" />
+                </form>
+            </div>
+            </aside>
+        </div>
+
+    </div>
+</section>
+    <section class="related">
+    <h2>Relacionado</h2>
+
+    <div class="container">
+        <div class="ficha-peli">
+            
+            <div class="movie-text" >
+                
+                <div>
+                    <label for="check-fav" class="fav-label"><img src="./img/star.png" height="30"/>
+                    </label><a class="goicon" href="./detalle.html"><img src="./img/goicon.png" width="30"/></a><br><br>
+                </div>
+                <strong>Título:</strong> Rock and Morty<br>
+                <strong>Año:</strong> 2013<br>
+                <strong>Director:</strong> Justin Roiland
+                Dan Harmon<br>
+                <strong>Actores:</strong> Justin Roiland
+                Chris Parnell<br>
+                
+                <strong>Sinopsis:</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati ratione laboriosam accusamus non aut, a natus exercitationem. Ullam commodi dolorem a, neque error quae corporis labore quasi autem sit dolorum!
+                <strong>Puntuación:</strong> 9,8
+                
+            </div>
+            <img class="cartel2" src="./img/cartel2.jpg" />
+            <div class="titulo-abajo">Rick y Morty</div>
+            <div class="botonera">
+                <a class="goicon" href="./detalle.html"><img src="./img/goicon.png" width="30"/></a>
+                <label for="check-fav" class="fav-label"><img src="./img/star.png" height="30"/></label>
+            </div>
+            <input class="check-fav" type="checkbox" id="check-fav" />
+            
+            <img  class="starred" width="20" src="./img/star2.png" />
+            
+        </div>
+    
+        <div class="ficha-peli">
+            
+            <div class="movie-text">
+                <div>
+                    <label for="check-fav2" class="fav-label"><img src="./img/star.png" height="30"/>
+                    </label><a class="goicon" href="./detalle.html"><img src="./img/goicon.png" width="30"/></a><br><br>
+                </div>
+                <strong>Título:</strong> Hora de Aventuras<br>
+                <strong>Año:</strong> 2007<br>
+                <strong>Director:</strong> Pendleton Ward<br>
+                <strong>Actores:</strong> Jeremy Shada
+                John DiMaggio<br>
+                <strong>Sinopsis:</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati ratione laboriosam accusamus non aut, a natus exercitationem. Ullam commodi dolorem a, neque error quae corporis labore quasi autem sit dolorum!
+                <strong>Puntuación:</strong> 9,8
+            </div>
+            
+            <img class="cartel2" src="./img/adventure-time2.jpg" />
+            <div class="titulo-abajo">Hora de Aventuras</div>
+            <div class="botonera">
+                <a class="goicon" href="./detalle.html"><img src="./img/goicon.png" width="30"/></a>
+                <label for="check-fav2" class="fav-label"><img src="./img/star.png" height="30"/></label>
+            </div>
+            <input class="check-fav" type="checkbox" id="check-fav2" />
+            
+            <img  class="starred" width="20" src="./img/star2.png" />
+                
+            
+        </div>
+
+        <div class="ficha-peli">
+            
+            <div class="movie-text" >
+                
+                <div>
+                    <label for="check-fav3" class="fav-label"><img src="./img/star.png" height="30"/>
+                    </label><a class="goicon" href="./detalle.html"><img src="./img/goicon.png" width="30"/></a><br><br>
+                </div>
+                <strong>Título:</strong> Rock and Morty<br>
+                <strong>Año:</strong> 2013<br>
+                <strong>Director:</strong> Justin Roiland
+                Dan Harmon<br>
+                <strong>Actores:</strong> Justin Roiland
+                Chris Parnell<br>
+                
+                <strong>Sinopsis:</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati ratione laboriosam accusamus non aut, a natus exercitationem. Ullam commodi dolorem a, neque error quae corporis labore quasi autem sit dolorum!
+                <strong>Puntuación:</strong> 9,8
+                
+            </div>
+            <img class="cartel2" src="./img/cartel2.jpg" />
+            <div class="titulo-abajo">Rick y Morty</div>
+            <div class="botonera">
+                <a class="goicon" href="./detalle.html"><img src="./img/goicon.png" width="30"/></a>
+                <label for="check-fav3" class="fav-label"><img src="./img/star.png" height="30"/></label>
+            </div>
+            <input class="check-fav" type="checkbox" id="check-fav3" />
+            
+            <img  class="starred" width="20" src="./img/star2.png" />
+            
+        </div>
+    
+        <div class="ficha-peli">
+            
+            <div class="movie-text">
+                <div>
+                    <label for="check-fav4" class="fav-label"><img src="./img/star.png" height="30"/>
+                    </label><a class="goicon" href="./detalle.html"><img src="./img/goicon.png" width="30"/></a><br><br>
+                </div>
+                <strong>Título:</strong> Hora de aventuras<br>
+                <strong>Año:</strong> 2007<br>
+                <strong>Director:</strong> Pendleton Ward<br>
+                <strong>Actores:</strong> Jeremy Shada
+                John DiMaggio<br>
+                <strong>Sinopsis:</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati ratione laboriosam accusamus non aut, a natus exercitationem. Ullam commodi dolorem a, neque error quae corporis labore quasi autem sit dolorum!
+                <strong>Puntuación:</strong> 9,8
+            </div>
+            
+            <img class="cartel2" src="./img/adventure-time2.jpg" />
+            <div class="titulo-abajo">Hora de Aventuras</div>
+            <div class="botonera">
+                <a class="goicon" href="./detalle.html"><img src="./img/goicon.png" width="30"/></a>
+                <label for="check-fav4" class="fav-label"><img src="./img/star.png" height="30"/></label>
+            </div>
+            <input class="check-fav" type="checkbox" id="check-fav4" />
+            
+            <img  class="starred" width="20" src="./img/star2.png" />
+                
+            
+        </div>
+
+        <div class="ficha-peli">
+            
+            <div class="movie-text" >
+                
+                <div>
+                    <label for="check-fav5" class="fav-label"><img src="./img/star.png" height="30"/>
+                    </label><a class="goicon" href="./detalle.html"><img src="./img/goicon.png" width="30"/></a><br><br>
+                </div>
+                <strong>Título:</strong> Rock and Morty<br>
+                <strong>Año:</strong> 2013<br>
+                <strong>Director:</strong> Justin Roiland
+                Dan Harmon<br>
+                <strong>Actores:</strong> Justin Roiland
+                Chris Parnell<br>
+                
+                <strong>Sinopsis:</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati ratione laboriosam accusamus non aut, a natus exercitationem. Ullam commodi dolorem a, neque error quae corporis labore quasi autem sit dolorum!
+                <strong>Puntuación:</strong> 9,8
+                
+            </div>
+            <img class="cartel2" src="./img/cartel2.jpg" />
+            <div class="titulo-abajo">Rick y Morty</div>
+            <div class="botonera">
+                <a class="goicon" href="./detalle.html"><img src="./img/goicon.png" width="30"/></a>
+                <label for="check-fav5" class="fav-label"><img src="./img/star.png" height="30"/></label>
+            </div>
+            <input class="check-fav" type="checkbox" id="check-fav5" />
+            
+            <img  class="starred" width="20" src="./img/star2.png" />
+            
+        </div>
+    
+        <div class="ficha-peli">
+            
+            <div class="movie-text">
+                <div>
+                    <label for="check-fav6" class="fav-label"><img src="./img/star.png" height="30"/>
+                    </label><a class="goicon" href="./detalle.html"><img src="./img/goicon.png" width="30"/></a><br><br>
+                </div>
+                <strong>Título:</strong> Hora de aventuras<br>
+                <strong>Año:</strong> 2007<br>
+                <strong>Director:</strong> Pendleton Ward<br>
+                <strong>Actores:</strong> Jeremy Shada
+                John DiMaggio<br>
+                <strong>Sinopsis:</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati ratione laboriosam accusamus non aut, a natus exercitationem. Ullam commodi dolorem a, neque error quae corporis labore quasi autem sit dolorum!
+                <strong>Puntuación:</strong> 9,8
+            </div>
+            
+            <img class="cartel2" src="./img/adventure-time2.jpg" />
+            <div class="titulo-abajo">Hora de Aventuras</div>
+            <div class="botonera">
+                <a class="goicon" href="./detalle.html"><img src="./img/goicon.png" width="30"/></a>
+                <label for="check-fav6" class="fav-label"><img src="./img/star.png" height="30"/></label>
+            </div>
+            <input class="check-fav" type="checkbox" id="check-fav6" />
+            
+            <img  class="starred" width="20" src="./img/star2.png" />
+                
+            
+        </div>
+
+        <div class="ficha-peli">
+            
+            <div class="movie-text" >
+                
+                <div>
+                    <label for="check-fav7" class="fav-label"><img src="./img/star.png" height="30"/>
+                    </label><a class="goicon" href="./detalle.html"><img src="./img/goicon.png" width="30"/></a><br><br>
+                </div>
+                <strong>Título:</strong> Rock and Morty<br>
+                <strong>Año:</strong> 2013<br>
+                <strong>Director:</strong> Justin Roiland
+                Dan Harmon<br>
+                <strong>Actores:</strong> Justin Roiland
+                Chris Parnell<br>
+                
+                <strong>Sinopsis:</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati ratione laboriosam accusamus non aut, a natus exercitationem. Ullam commodi dolorem a, neque error quae corporis labore quasi autem sit dolorum!
+                <strong>Puntuación:</strong> 9,8
+                
+            </div>
+            <img class="cartel2" src="./img/cartel2.jpg" />
+            <div class="titulo-abajo">Rick y Morty</div>
+            <div class="botonera">
+                <a class="goicon" href="./detalle.html"><img src="./img/goicon.png" width="30"/></a>
+                <label for="check-fav7" class="fav-label"><img src="./img/star.png" height="30"/></label>
+            </div>
+            <input class="check-fav" type="checkbox" id="check-fav7" />
+            
+            <img  class="starred" width="20" src="./img/star2.png" />
+            
+        </div>
+    
+        <div class="ficha-peli">
+            
+            <div class="movie-text">
+                <div>
+                    <label for="check-fav8" class="fav-label"><img src="./img/star.png" height="30"/>
+                    </label><a class="goicon" href="./detalle.html"><img src="./img/goicon.png" width="30"/></a><br><br>
+                </div>
+                <strong>Título:</strong> Hora de aventuras<br>
+                <strong>Año:</strong> 2007<br>
+                <strong>Director:</strong> Pendleton Ward<br>
+                <strong>Actores:</strong> Jeremy Shada
+                John DiMaggio<br>
+                <strong>Sinopsis:</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati ratione laboriosam accusamus non aut, a natus exercitationem. Ullam commodi dolorem a, neque error quae corporis labore quasi autem sit dolorum!
+                <strong>Puntuación:</strong> 9,8
+            </div>
+            
+            <img class="cartel2" src="./img/adventure-time2.jpg" />
+            <div class="titulo-abajo">Hora de Aventuras</div>
+            <div class="botonera">
+                <a class="goicon" href="./detalle.html"><img src="./img/goicon.png" width="30"/></a>
+                <label for="check-fav8" class="fav-label"><img src="./img/star.png" height="30"/></label>
+            </div>
+            <input class="check-fav" type="checkbox" id="check-fav8" />
+            
+            <img  class="starred" width="20" src="./img/star2.png" />
+                
+            
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+<footer>
+    <logo class="logo">NERDFLIX</logo>
+    <address>
+        Avda. Bucle, 8<br>
+        sdcadc<br>
+España
+    </address>
+</footer>
+</html>

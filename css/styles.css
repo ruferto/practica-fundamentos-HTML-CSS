@@ -1,0 +1,87 @@
+:root {
+  --navbar-height: 3rem;
+  --cartel-width: 200px;
+  --cartel-height: 300px;
+  --salmonete: rgba(255,0,0,0.8);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    --salmonete: rgb(46, 42, 42);
+  }
+}
+
+
+@font-face {
+  font-family: beba;
+  src: url('../fonts/bebasneue-regular.ttf');
+}
+
+@font-face {
+  font-family: digital;
+  src: url('../fonts/digital-7-mono.ttf');
+}
+
+@font-face {
+  font-family: subway;
+  src: url('../fonts/subway-black.ttf');
+}
+  
+  
+  * {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  a,
+  a:link,
+  a:visited,
+  a:focus {
+    text-decoration: none;
+    /* color: darkblue; */
+  }
+
+  body{
+      /* background-color: rgb(241, 82, 82); */
+      /* background-color: black; */
+      /* margin:2rem; */
+      background-color: var(--salmonete);
+      padding-top: var(--navbar-height);
+  }
+footer{
+  background-color: black;
+  /* position:absolute; */
+  color:lightgrey;
+  font-size: .9rem;
+  width:100vw;
+  top: 90vh;
+  padding:1.5rem;
+  margin-top: 3rem;
+  
+}
+  .titulo-header {
+    margin:0rem;
+    color: white;
+    font-family: beba;
+    font-size: 5rem;;
+    text-align: center;
+    
+    -webkit-text-stroke: 1px black;
+    
+    /* text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000; */
+
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+  

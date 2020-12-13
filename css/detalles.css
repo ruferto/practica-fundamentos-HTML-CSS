@@ -1,0 +1,156 @@
+.contenedor-video{
+    background-color: black;
+    /* height: 50vh; */
+    display: flex;
+    justify-content: center;
+
+    /* height: 200px; */
+    object-fit: cover;
+    object-position: center top;
+}
+
+.reproductor{
+    width:100%;
+    min-width: 40wv;
+}
+
+.wrapper {
+    display: grid; 
+    padding-left: 25px;
+    padding-right: 25px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; 
+    
+  }
+
+/* .contenedor-video {
+    
+    width: fit-content;
+block-size: fit-content;
+
+    
+} */
+
+.ficha-tecnica { 
+    grid-area: 1 / 2 / 3 / 3;
+    background-color: whitesmoke;
+    padding: 2rem;
+    min-width: 40wv;
+    border-radius: 20px;
+}
+
+.counter{
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: whitesmoke;
+    border-radius: 20px;
+
+    justify-content: center;
+    
+}
+
+.coming{
+    font-family: beba, Verdana, Arial;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    line-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  
+}
+.counter-numbers{
+    font-family: digital, beba, Verdana;
+    font-size: 3rem;
+    text-align: center;
+    
+    
+}
+
+.counter-numbers > span {
+    font-family: digital, beba, Verdana;
+    font-size:3rem;
+    
+
+    animation: parpadeo .8s stepsinfinite;
+    -webkit-animation: parpadeo .8s infinite;
+}
+
+@keyframes parpadeo {
+    to {
+        opacity: .2;
+    }
+}
+@-webkit-keyframes parpadeo {
+    to {
+        opacity: .2;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        grid-template-areas:
+      'main other1'
+      'main other2'
+      'main other3';
+      column-gap: 0px;
+      }
+    
+    .contenedor-video {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    .ficha-tecnica { 
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .counter{
+        
+        grid-area: 3 / 1 / 4 / 2;
+    }
+}
+
+.counter-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.counter-email{
+    width: 80%;
+    height: 1rem;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    padding: 1rem;
+    
+}
+
+.counter-mail-btn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    border-width: 0px;
+    /* border-color: var(--salmonete); */
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    min-width: 10rem;
+    
+    border-radius: 25px;
+    background: var(--salmonete);
+
+    transition: 0.3s ease;
+  
+}
+
+.counter-mail-btn:active{
+    color: var(--salmonete);
+    background: whitesmoke;
+    border-color: var(--salmonete);;
+    transform: scale(.9);
+}
+
+.related{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    padding-top: 50px;
+}
