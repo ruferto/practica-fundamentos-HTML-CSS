@@ -154,3 +154,15 @@ block-size: fit-content;
     color: white;
     padding-top: 50px;
 }
+
+@media (prefers-reduced-motion) {
+    .counter-numbers > span {
+      
+        animation: none;
+    }
+
+    .counter-mail-btn:active{
+        transform: scale(1);
+    }
+    
+  }
