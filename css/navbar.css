@@ -36,9 +36,22 @@
     
 }
 
+.lupa-icon{
+  height: 22px;
+}
+
 .navbar-item a:hover .lupa-icon{
     filter: invert(0);
     
+}
+
+.logout-icon{
+  height: 22px;
+}
+
+.navbar-item a:hover .logout-icon{
+  filter: invert(1);
+  
 }
 
 .logo {
